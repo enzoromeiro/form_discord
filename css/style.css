@@ -1,0 +1,131 @@
+html,body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(0deg,#0d0d0e,#1b1b1f,#2a2a31,#363642,#363642,#353546 );
+}
+
+/*CABEÇALHO/HEADER*/
+
+header {
+    font-family: 'Segoe UI';  
+    color: #5865F2;
+    background-color: rgb(15, 15, 15);
+    max-width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 90px;
+    margin-left: 35px;
+}
+
+nav a {
+    padding: 20px;
+    color: #5865F2; 
+}
+
+header button {
+    border-radius: 16px;
+    width: 100px;
+    height: 40px;
+    margin-right: 25px;
+    background-color: #2e2e36;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow:0px 0px 8px rgb(0, 0, 0);
+}
+
+header a {
+    text-decoration: none;
+    
+}
+
+header button:hover {
+    background-color: #ffffff;
+    color: #5865F2;
+    font-weight: bold;
+    transition: 0.5s;
+    box-shadow:0px 0px 8px rgb(0, 0, 0);
+}
+
+/*CONTEÚDO*/
+
+.content {
+    margin-top: 22vh;
+    
+}
+
+main {
+    width: 300px;
+    height: 330px;
+    text-align: center;
+    background-color: #2e2e36;
+    border-radius: 10%;
+    border: solid rgb(25, 25, 34) 3px;
+    margin: auto;
+    
+    
+}
+
+main h1 {
+    font-family: 'Segoe UI';  
+    background-color: #1b1b1f; 
+    margin: 25px;
+    border-radius: 16px;
+    color: #5865F2;
+    font-size: 29px;
+}
+
+form input {
+    margin: 5px;
+    background-color: #1f1e2c;
+    color: aliceblue;
+}
+
+form button {
+    margin-top: 12px;
+    width: 9.9vw;
+    min-width: 100px;
+    background-color: #2e2e36;
+    color: aliceblue;
+    height: 4vh;
+    min-height: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow:0px 0px 8px rgb(19, 19, 20);
+}
+
+main:hover {
+    width: 325px;
+    height: 345px;
+    transition: 0.4s;
+}
+
+form input:focus {
+    border:solid #5865F2  4px ;
+}
+
+form input:hover {
+    background-color: #383747;
+    border-radius: 10px;
+}
+
+button:hover {
+    border-radius: 16px;
+    color: #2e2e36;
+    background-color: aliceblue;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow:0px 0px 15px 2px rgb(19, 19, 20);
+}
+
+
+
+
+
+
+
