@@ -1,0 +1,84 @@
+@media (max-width: 670px) {
+    main h1 {
+        font-size: 25px;
+    }
+
+    main div img {
+        top: 67%;
+        right: 46%;
+    }
+}
+
+@media (max-width: 560px) {
+    main h1 {
+        font-size: 20px;
+    }
+
+    main img {
+        width: 90px;
+        min-width: 50px;
+    }
+
+    main div img {
+        top: 67%;
+        right: 46%;
+    }
+
+    #discord:hover {
+        width: 125px;
+        height: auto; 
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 459px) {
+    #discord {
+        width: 20vw;
+    }
+
+    #discord:hover {
+        width: 23vw;
+        height: auto; 
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 399px) {
+    main h1 {
+        font-size: 17px;
+    }
+
+    main div img {
+        top: 67%;
+        right: 46%;
+    }
+}
+
+@media (max-height: 846px) {
+    main div img {
+        width: 33px;
+        top: 70%;
+        right: 47%;
+    }
+}
+
+@media (max-height: 660px) {
+    main div img {
+        top: 75%;
+        right: 49%;
+    }
+}
+
+@media (max-height: 537px) {
+    main div img {
+        top: 80%;
+        right: 49%;
+    }
+}
+
+@media (max-height: 440px) {
+    main div img {
+        top: 85%;
+        right: 49%;
+    }
+}
