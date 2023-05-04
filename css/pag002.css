@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-main {
+main section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,34 +16,37 @@ main {
     font-family: 'Segoe UI';  
     background-color: #1b1b1f; 
     color: #5865F2;
-    width: 500px;
+    width: 70vw;
     height: 250px;
     background-color: #222229;
     border-radius: 16px;
     box-shadow: 0px 0px 5px rgb(5, 5, 5);
 }
 
-main:hover {
+main section:hover {
     border-radius: 40px;
     transition: 0.5s;
 }
 
 main img {
     width: 125px;
+    min-width: 50px;
     height: auto;
 }
 
-div img {
+main div img {
     width: 40px;
+    min-width: 20px;
+    min-height: auto;
     height: auto;
-    top: 65%;
+    top: 67%;
     position: absolute;
     right: 49%;
     border-radius: 40px;
     box-shadow: 0px 0px 9px black;
 }
 
-div img:hover {
+main div img:hover {
     opacity: 80%;
     transition: 0.1s;
     box-shadow: 0px 0px 9px black;
