@@ -1,5 +1,4 @@
 body {
-    
     background: linear-gradient(0deg,#0d0d0e,#1b1b1f,#2a2a31,#363642,#363642,#353546 );
     display: flex;
     align-items: center;
@@ -12,7 +11,6 @@ main section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
     font-family: 'Segoe UI';  
     background-color: #1b1b1f; 
     color: #5865F2;
@@ -25,6 +23,10 @@ main section {
 
 main section:hover {
     border-radius: 40px;
+    transition: 0.5s;
+}
+
+main section:not(:hover) {
     transition: 0.5s;
 }
 
@@ -56,4 +58,8 @@ main div img:hover {
     width: 155px;
     height: auto; 
     transition: 0.4s;
+}
+
+#discord:not(:hover){
+    transition: 0.3s;
 }
