@@ -1,0 +1,36 @@
+@media (max-width: 743px) {
+    header img {
+        width: 70px;
+    }
+
+    header .menu {
+        font-size: 13px;
+    }
+
+    #button-login {
+        width: 70px;
+        height: 37px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* Header */
+    #button-login {
+        width: 60px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        color: #ffffff;
+        display: inline-block;
+    }
+
+    /*Main*/
+}
+
