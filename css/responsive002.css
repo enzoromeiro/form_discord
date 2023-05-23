@@ -1,6 +1,6 @@
 @media (max-width: 670px) {
     main h1 {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     main div img {
@@ -9,9 +9,9 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 564px) {
     main h1 {
-        font-size: 20px;
+        font-size: 1.0rem;
     }
 
     main img {
@@ -45,7 +45,7 @@
 
 @media (max-width: 399px) {
     main h1 {
-        font-size: 17px;
+        font-size: 0.9rem;
     }
 
     main div img {
