@@ -63,6 +63,7 @@ header .menu {
     padding: 0;
     margin: 0;
     height: 40px;
+    top: 90px;
     position: fixed;
     display: none;
 }
@@ -179,7 +180,6 @@ form input {
 
 form #idade {
     color: rgb(122, 121, 121);
-    width: 450px;
     padding-left: 7px;
 }
 

@@ -6,7 +6,12 @@
     main:hover {
         width: 560px;
     }
+
+    .label-input label {
+        width: 430px;
+    }
 }
+
 
 @media (max-width: 743px) {
     /*Header*/
@@ -32,7 +37,7 @@
 
     main {
         width: 450px;
-        height: 300px;
+        height: 360px;
     }
 
     form input {
@@ -54,6 +59,10 @@
 
     main:hover {
         width: 500px;
+    }
+
+    .label-input label {
+        width: 305px;
     }
     
 }
@@ -88,7 +97,7 @@
 
     main {
         width: 385px;
-        height: 300px;
+        height: 328px;
     }
 
     form input {
@@ -109,7 +118,16 @@
     }
 
     main:hover {
-        width: 420px;
+        width: 385px;
+    }
+
+    .label-input {
+        margin-bottom: 3px;
+    }
+
+    .label-input label {
+        width: 270px;
+        font-size: 1.5rem;
     }
 }
 
@@ -118,7 +136,7 @@
 
     main {
         width: 330px;
-        height: 280px;
+        height: 300px;
     }
 
     form input {
@@ -144,7 +162,16 @@
     }
     
     main:hover {
-        width: 360px;
+        width: 330px;
+    }
+
+    .label-input {
+        margin-bottom: 3px;
+    }
+
+    .label-input label {
+        width: 235px;
+        font-size: 1.3rem;
     }
 }
 
@@ -153,8 +180,7 @@
 
     main {
         width: 300px;
-        height: 280px;
-        margin-top: 18vh;
+        height: 300px;
     }
 
     form input {
@@ -171,4 +197,12 @@
     main:hover {
         width: 340px;
     }
+
+    .label-input {
+        margin-bottom: 3px;
+    }
+
+    .label-input label {
+        width: 210px;
+        font-size: 1.3rem;
 }
