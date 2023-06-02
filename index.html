@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .material-symbols-outlined {
@@ -60,21 +59,36 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <h1>DISCORD</h1>
-        <form action="pag002.html">
-            <input type="text" autocomplete="off" placeholder="Nickname" required id="nome" name="nome">
-                
-            <input type="text" autocomplete="off" placeholder="Idade" required id="idade" name="idade" >
+    <div id="centralize-main">
+        <main>
+            <h1>DISCORD</h1>
+            <form action="pag002.html">
+                <div class="label-input">
+                    <label for="nome">Seu nome ou apelido</label>
+                    <input type="text" autocomplete="off" placeholder="Nickname" required id="nome" name="nome">
+                </div>
+        
+                <div class="label-input">
+                    <label for="idade">Data de Nascimento</label>
+                    <input type="date" autocomplete="off" required id="idade" name="idade" >
+                </div>
+                <div class="label-input">
+                    <label for="email">Seu email</label>
+                    <input type="email" autocomplete="off" placeholder="exemplo@gmail.com" required id="email" name="email">
+                </div>
+                <div class="label-input">
+                    <label for="senha">Sua senha</label>
+                    <input type="password" placeholder="Deve conter números e caracteres" minlength="8" required id="senha" name="senha">
+                </div>
+                <div class="label-input">
+                    <label for="repita_senha">Repita sua senha</label>
+                    <input type="password" placeholder="Confirmar Senha" required id="repita_senha" name="repita_senha" oninput="conferir()">
+                </div><br>
+                <button type="submit">Criar conta</button>
+            </form>
+        </main>
+    </div>
 
-            <input type="email" autocomplete="off" placeholder="exemplo@gmail.com" required id="email" name="email">
-
-            <input type="password" placeholder="Senha" minlength="8" required id="senha" name="senha">
-
-            <input type="password" placeholder="Repita sua senha" required id="repita_senha" name="repita_senha"><br><br>
-
-            <button type="submit">Criar conta</button>
-        </form>
-    </main>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -40,20 +40,25 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <h1>DISCORD</h1>
-        <form action="#">
-            <input type="email" autocomplete="off" placeholder="Digite seu e-mail" required>
-
-            <input type="password" placeholder="Senha" required><br><br>
-
-            <button type="submit">Log in</button>
-
-            <p class="recuperar-senha">
-                <a href="#">não lembro minha senha!</a>
-            </p>
-        </form>
-    </main>
+    <div id="centralize-main">
+        <main>
+            <h1>DISCORD</h1>
+            <form action="#">
+                <div class="label-input">
+                    <label for="email">Seu email</label>
+                    <input type="email" autocomplete="off" placeholder="exemplo@gmail.com" required id="email" name="email">
+                </div>
+                <div class="label-input">
+                    <label for="senha">Sua senha</label>
+                    <input type="password" placeholder="Deve conter números e caracteres" minlength="8" required id="senha" name="senha">
+                </div><br>
+                <button type="submit">Log in</button>
+                <p class="recuperar-senha">
+                    <a href="#">não lembro minha senha!</a>
+                </p>
+            </form>
+        </main>
+    </div>
  
 </body>
 </html>
