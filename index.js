@@ -7,17 +7,35 @@ function clickMenu() {
         }
 } 
 
+document.getElementById('botao').addEventListener('click', conferir)
+function conferir(e) {
+    e.preventDefault()
 
-    function conferir() {
-        let senha = document.getElementById ('senha')
-        let repitaSenha = document.getElementById ('repita_senha')
+    let nome = document.getElementById('nome').value;
+    let idade = document.getElementById('idade').value;
+    let email = document.getElementById('email').value;
+    let senha = document.getElementById('senha').value;
+    let repitaSenha = document.getElementById('repita_senha').value;
 
-        if (senha.value !== repitaSenha.value) {
-            repitaSenha.style.backgroundColor = '#f7191973'
-        } else {
-            repitaSenha.style.backgroundColor = '#1f1e2c'
-        }
+    // Verificar se está tudo preenchido
+    if (nome === '' || idade === '' || email === '' || senha === '' || repitaSenha === '') {
+    alert('Preencha todas as informações');
+    return;
     }
+
+    // Verificar se as senhas coincidem
+    if (senha !== repitaSenha) {
+    alert('Verifique se digitou a senha corretamente.');
+    return;
+    }
+
+    // Encaminhar para a página 002 caso esteja tudo certo
+    location.href = 'pag002.html';
+}
+
+
+    
+    
 
 
 
