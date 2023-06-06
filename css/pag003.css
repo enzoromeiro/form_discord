@@ -1,8 +1,9 @@
-html,body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background: linear-gradient(0deg,#0d0d0e,#1b1b1f,#2a2a31,#363642,#363642,#353546 );
     font-family: 'Segoe UI';
     display: flex;

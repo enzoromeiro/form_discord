@@ -99,6 +99,10 @@
         margin-left: 20px;
     }
 
+    #burguer2 {
+        top: 80px;
+    }
+
     /*Main*/
 
     main {
@@ -140,7 +144,6 @@
 @media (max-width: 438px) {
     /*header*/
     #burguer2 {
-        margin-right: 35px;
         top: 80px;
     }
     
