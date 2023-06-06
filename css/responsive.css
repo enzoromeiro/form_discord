@@ -192,7 +192,7 @@
     main {
         width: 335px;
         height: 423px;
-        margin-top: 5vh;
+        margin-top: 15vh;
     }
 
     main h1 {
@@ -232,4 +232,62 @@
     }
 }
 
+@media (max-height: 617px) {
+    /*Main*/
 
+    main {
+        width: 335px;
+        height: 400px;
+        margin-top: 10vh;
+    }
+
+    main h1 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 560px) {
+    /*Main*/
+
+    main {
+        width: 335px;
+        height: 400px;
+        margin-top: 20vh;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+        height: 37px;
+        margin-bottom: 10px;
+    }
+
+    form input {
+        margin: 3px;
+        width: 200px;
+        height: 22px;
+    }
+
+    form button {
+        width: 135px;
+        min-width: 100px;
+        background-color: #2e2e36;
+        color: aliceblue;
+        height: 32px;
+        min-height: 20px;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .label-input {
+        margin-bottom: 3px;
+    }
+
+    .label-input label {
+        width: 180px;
+        font-size: 1.3rem;
+    }
+    
+    main:hover {
+        width: 340px;
+    }
+}
