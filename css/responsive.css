@@ -124,6 +124,10 @@
     .label-input label {
         width: 305px;
     }
+
+    .cor {
+        font-size: 1.0rem;
+    }
     
 }
 
