@@ -232,6 +232,10 @@ form input {
     display: none;
 }
 
+#required-senha {
+    display: none; 
+}
+
 #required-repita-senha {
     display: none;
 }

@@ -6,12 +6,13 @@ const repitaSenha = document.getElementById('repita_senha');
 const spanNome = document.getElementById('required-nome');
 const spanIdade = document.getElementById('required-idade');
 const spanEmail = document.getElementById('required-email');
+const spanSenha = document.getElementById('required-senha');
 const spanRepitaSenha = document.getElementById('required-repita-senha');
 const containerErro = document.getElementById ('erro-form-container');
 let IdadeMin = idade.value - 2023
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-
+//menu burguer
 function clickMenu() {
     var menu = document.querySelector ('#burguer2')
         if ( menu.style.display === 'block') {
@@ -20,6 +21,20 @@ function clickMenu() {
             menu.style.display = 'block';
         }
 } 
+
+
+//validação formulário
+document.getElementById('form').addEventListener('submit', conferir)
+function conferir(e) {
+    e.preventDefault()
+
+    validarNome();
+    validarData(); 
+    validarEmail();
+    validarRepitaSenha();
+    validarSenha();
+
+}
 
 function validarNome() {
     if (nome.value.length < 3 || nome.value.length > 10) {
@@ -58,6 +73,19 @@ function validarEmail() {
     }
 }
 
+function validarSenha() {
+    if (senha.value.length < 8) {
+        senha.style.border = 'solid red 1px'
+        containerErro.style.display = 'block'
+        spanSenha.style.display = 'block';
+        return;
+    } else {
+        senha.style.border = ''
+        containerErro.style.display = 'none'
+        spanSenha.style.display = 'none';
+    }
+}
+
 function validarRepitaSenha() {
     if (senha.value !== repitaSenha.value) {
         repitaSenha.style.border = 'solid red 1px'
@@ -72,23 +100,11 @@ function validarRepitaSenha() {
 }
 
 
-document.getElementById('botao').addEventListener('click', conferir)
-function conferir(e) {
-    e.preventDefault()
 
-    // Verificar se está tudo preenchido
-    if (nome.value === '' || idade.value === '' || email.value === '' || senha.value === '' || repitaSenha.value === '') {
-        alert('Preencha todas as informações');
-        return;
-    }
-
-    // Encaminhar para a página 002 caso esteja tudo certo
-    location.href = 'pag002.html';
-}
 
 
     
-    
+
 
 
 

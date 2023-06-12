@@ -68,7 +68,7 @@
         <main>
             <h1>Criar uma conta</h1>
 
-            <form action="">
+            <form action="" id="form">
                 <div class="label-input">
                     <label for="nome">Seu nome ou apelido
                         <span class="asterisco"> *</span>
@@ -102,15 +102,18 @@
                 <div class="label-input">
                     <label for="senha">Sua senha
                         <span class="asterisco"> *</span>
+                        <span id="required-senha" class="cor">
+                            ❗ Sua senha deve conter no mínimo 8 caracteres.
+                        </span>
                     </label>
-                    <input type="password" placeholder="Crie uma senha confiável" minlength="8" id="senha" name="senha">
+                    <input type="password" placeholder="Crie uma senha confiável" minlength="8" id="senha" name="senha" oninput="validarSenha()">
                 </div>
 
                 <div class="label-input">
                     <label for="repita_senha">Repita sua senha
                         <span class="asterisco"> *</span>
                         <span id="required-repita-senha" class="cor">
-                            ❗ A senha está incorreta.
+                            ❗ As senhas devem ser iguais.
                         </span>
                     </label>
                     <input type="password" placeholder="Confirmar Senha" id="repita_senha" name="repita_senha" oninput="validarRepitaSenha()">
