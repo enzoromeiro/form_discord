@@ -46,11 +46,19 @@ function validarData() {
 }
 
 function validarEmail() {
-    
+    if (!emailRegex.test(email.value) ) {
+        email.style.border = 'solid red 1px'
+        containerErro.style.display = 'block'
+        spanEmail.style.display = 'block';
+        return;
+    } else {
+        email.style.border = ''
+        containerErro.style.display = 'none'
+        spanEmail.style.display = 'none';
+    }
 }
 
 function validarRepitaSenha() {
-    // Verificar se as senhas coincidem
     if (senha.value !== repitaSenha.value) {
         repitaSenha.style.border = 'solid red 1px'
         containerErro.style.display = 'block'
