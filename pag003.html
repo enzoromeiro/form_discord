@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <a href="pag003.html"><img src="img/discord.png" alt="logo discord"></a>
+        <a href="index.html"><img src="img/discord.png" alt="logo discord"></a>
         <nav class="menu">
             <ul class="menu">
                 <li>
@@ -25,7 +25,9 @@
             </ul>
         </nav>
         <div>
-            <a href="index.html"><button id="button-login">Criar Conta</button></a>
+            <a href="index.html">
+                <button id="button-login">Criar conta</button>
+            </a>
             <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
         </div>
     </header>
@@ -34,34 +36,42 @@
             <li>
                 <a href="#">Ajuda</a>
             </li>
-
+            
             <li>
                 <a href="#">Sobre</a>
             </li>
         </ul>
     </nav>
     <div id="centralize-main">
+
+        <div id="caixa-wumpus">
+            <h2>Olá! faça seu Log In.</h2>
+            <img src="img/wumpus-banner.png" alt="wumpus" width="100%" >
+        </div>
+
         <main>
-            <h1>DISCORD</h1>
-            <form action="#">
+            <h1>Entrar</h1>
+
+            <form action="">
+
                 <div class="label-input">
-                    <label for="email">Seu email</label>
-                    <input type="email" autocomplete="off" placeholder="exemplo@gmail.com" required id="email" name="email">
+                    <label for="email">Seu email
+                        <span class="asterisco"> *</span>
+                    </label>
+                    <input type="email" autocomplete="off" id="email" name="email" placeholder="seuemail@gmail.com">
                 </div>
+
                 <div class="label-input">
-                    <label for="senha">Sua senha</label>
-                    <input type="password" placeholder="Deve conter números e caracteres" minlength="8" required id="senha" name="senha">
+                    <label for="senha">Sua senha
+                        <span class="asterisco"> *</span>
+                    </label>
+                    <input type="password" placeholder="senha" minlength="8" id="senha" name="senha">
                 </div><br>
-                <button type="submit">Log in</button>
-                <p class="recuperar-senha">
-                    <a href="#">não lembro minha senha!</a>
-                </p>
+
+                <button type="submit" id="botao">Log In</button>
             </form>
         </main>
     </div>
-    <footer> 
-        &copy;Desevolvido por Enzo Romeiro, 2023
-    </footer>
  
 </body>
 </html>

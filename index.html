@@ -20,8 +20,7 @@
             }
 
             header button {
-                right: 25px;
-                
+                right: 25px; 
             }
         }
     </style>
@@ -60,37 +59,72 @@
         </ul>
     </nav>
     <div id="centralize-main">
+
+        <div id="caixa-wumpus">
+            <h2>Olá! Seja bem vindo.</h2>
+            <img src="img/wumpus-banner.png" alt="wumpus" width="100%" >
+        </div>
+
         <main>
-            <h1>DISCORD</h1>
+            <h1>Criar uma conta</h1>
+
             <form action="">
                 <div class="label-input">
-                    <label for="nome">Seu nome ou apelido</label>
-                    <input type="text" autocomplete="off" placeholder="Nickname" id="nome" name="nome">
+                    <label for="nome">Seu nome ou apelido
+                        <span class="asterisco"> *</span>
+                        <span id="required-nome" class="cor"> 
+                            ❗ Seu nome deve conter no minino 3 e no máximo 10 caracteres.
+                        </span>
+                    </label>
+                    <input type="text" autocomplete="off" placeholder="Nickname" id="nome" name="nome" oninput="validarNome()">
                 </div>
         
                 <div class="label-input">
-                    <label for="idade">Data de Nascimento</label>
-                    <input type="date" autocomplete="off"  id="idade" name="idade" >
+                    <label for="idade">Data de Nascimento
+                        <span class="asterisco"> *</span>
+                        <span id="required-idade" class="cor">
+                            ❗ Escolha uma data de nascimento válida.
+                        </span>
+                    </label>
+                    <input type="number" autocomplete="off"  id="idade" name="idade" placeholder="Ex: 1996" max="2023" oninput="validarData()" min="1900" max="2023">
                 </div>
+
                 <div class="label-input">
-                    <label for="email">Seu email</label>
-                    <input type="email" autocomplete="off" id="email" name="email" placeholder="seuemail@gmail.com" >
+                    <label for="email">Seu email
+                        <span class="asterisco"> *</span>
+                        <span id="required-email" class="cor">
+                            ❗ Isso não é um email válido
+                        </span>
+                    </label>
+                    <input type="email" autocomplete="off" id="email" name="email" placeholder="seuemail@gmail.com" oninput="validarEmail()" >
                 </div>
+
                 <div class="label-input">
-                    <label for="senha">Sua senha</label>
-                    <input type="password" placeholder="Deve conter números e caracteres" minlength="8" id="senha" name="senha">
+                    <label for="senha">Sua senha
+                        <span class="asterisco"> *</span>
+                    </label>
+                    <input type="password" placeholder="Crie uma senha confiável" minlength="8" id="senha" name="senha">
                 </div>
+
                 <div class="label-input">
-                    <label for="repita_senha">Repita sua senha</label>
-                    <input type="password" placeholder="Confirmar Senha" id="repita_senha" name="repita_senha">
+                    <label for="repita_senha">Repita sua senha
+                        <span class="asterisco"> *</span>
+                        <span id="required-repita-senha" class="cor">
+                            ❗ A senha está incorreta.
+                        </span>
+                    </label>
+                    <input type="password" placeholder="Confirmar Senha" id="repita_senha" name="repita_senha" oninput="validarRepitaSenha()">
                 </div><br>
+
                 <button type="submit" id="botao">Criar conta</button>
+                <section id="erro-form-container">
+                    <br>
+                    <br>
+                    <br>
+                </section>
             </form>
         </main>
     </div>
-    <footer> 
-        &copy;Desevolvido por Enzo Romeiro, 2023
-    </footer>
 
     <script src="index.js"></script>
 </body>
