@@ -1,3 +1,17 @@
+const nome = document.getElementById('nome');
+const idade = document.getElementById('idade');
+const email = document.getElementById('email');
+const senha = document.getElementById('senha');
+const repitaSenha = document.getElementById('repita_senha');
+const spanNome = document.getElementById('required-nome');
+const spanIdade = document.getElementById('required-idade');
+const spanEmail = document.getElementById('required-email');
+const spanRepitaSenha = document.getElementById('required-repita-senha');
+const containerErro = document.getElementById ('erro-form-container');
+let IdadeMin = idade.value - 2023
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
 function clickMenu() {
     var menu = document.querySelector ('#burguer2')
         if ( menu.style.display === 'block') {
@@ -7,26 +21,57 @@ function clickMenu() {
         }
 } 
 
+function validarNome() {
+    if (nome.value.length < 3 || nome.value.length > 10) {
+        nome.style.border = 'solid red 1px'
+        containerErro.style.display = 'block'
+        spanNome.style.display = 'block'
+    } else if (nome.value.length >= 3 && nome.value.length <= 10){
+        nome.style.border = ''
+        containerErro.style.display = 'none'
+        spanNome.style.display = 'none'
+    }
+}
+
+function validarData() {
+    if (idade.value.length < 4 || idade.value.length > 4) {
+        idade.style.border = 'solid red 1px'
+        spanIdade.style.display = 'block'
+        containerErro.style.display = 'block'
+    } else {
+        idade.style.border = ''
+        containerErro.style.display = 'none'
+        spanIdade.style.display = 'none'
+    }
+}
+
+function validarEmail() {
+    
+}
+
+function validarRepitaSenha() {
+    // Verificar se as senhas coincidem
+    if (senha.value !== repitaSenha.value) {
+        repitaSenha.style.border = 'solid red 1px'
+        containerErro.style.display = 'block'
+        spanRepitaSenha.style.display = 'block';
+        return;
+    } else {
+        repitaSenha.style.border = ''
+        containerErro.style.display = 'none'
+        spanRepitaSenha.style.display = 'none';
+    }
+}
+
+
 document.getElementById('botao').addEventListener('click', conferir)
 function conferir(e) {
     e.preventDefault()
 
-    let nome = document.getElementById('nome').value;
-    let idade = document.getElementById('idade').value;
-    let email = document.getElementById('email').value;
-    let senha = document.getElementById('senha').value;
-    let repitaSenha = document.getElementById('repita_senha').value;
-
     // Verificar se está tudo preenchido
-    if (nome === '' || idade === '' || email === '' || senha === '' || repitaSenha === '') {
-    alert('Preencha todas as informações');
-    return;
-    }
-
-    // Verificar se as senhas coincidem
-    if (senha !== repitaSenha) {
-    alert('Verifique se digitou a senha corretamente.');
-    return;
+    if (nome.value === '' || idade.value === '' || email.value === '' || senha.value === '' || repitaSenha.value === '') {
+        alert('Preencha todas as informações');
+        return;
     }
 
     // Encaminhar para a página 002 caso esteja tudo certo
