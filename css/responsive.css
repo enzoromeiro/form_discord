@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 913px) {
+@media (max-width: 950px) {
     body {
         height: 105vh;
         background: linear-gradient(#5865F2, #2b3add, #2131db)
@@ -278,6 +278,26 @@
         font-size: 2.5rem;
     }
 
+}
+
+@media (max-height: 627px) {
+    body {
+        min-height: 140vh;
+    }
+    
+    form input {
+        width: 280px;
+    }
+
+    form button {
+        width: 280px;
+    }
+
+    .label-input label {
+        width: 260px;
+        font-size: 1.5rem;
+    }
+   
 }
 
 
