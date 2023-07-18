@@ -7,6 +7,10 @@
         width: 340px;
     }
 
+    .label-input {
+        width: 370px;
+    }
+
     form button {
         width: 367px;
     }
@@ -27,8 +31,21 @@
         height: 32px;
     }
 
+    .label-input {
+        width: 305px;
+    }
+
+    .icon-error img {
+        width: 15px;
+    }
+
     .label-input label {
         width: 280px;
+    }
+
+    .cor {
+        color: red;
+        font-size: 0.9rem;
     }
 
     form button {
@@ -64,6 +81,10 @@
         margin: 3px;
         width: 387px;
         height: 38px;
+    }
+
+    .label-input {
+        width: 392px;
     }
 
     .label-input label {
@@ -161,6 +182,14 @@
         width: 330px;
     }
 
+    .label-input {
+        width: 330px;
+    }
+
+    .icon-error img {
+        width: 14px;
+    }
+
     .label-input label {
         width: 305px;
     }
@@ -232,12 +261,21 @@
     }
 
     .label-input {
+        width: 305px;
+    }
+
+    .label-input {
         margin-bottom: 3px;
     }
 
     .label-input label {
         width: 280px;
         font-size: 1.5rem;
+    }
+
+    .cor {
+        color: red;
+        font-size: 0.9rem;
     }
 }
 
@@ -283,12 +321,27 @@
     }
 
     .label-input {
+        width: 235px;
         margin-bottom: 3px;
+    }
+
+    .icon-error {
+        margin-top: 28px;
+    }
+
+    .icon-error img {
+        width: 11px;
     }
 
     .label-input label {
         width: 212px;
         font-size: 1.3rem;
+    }
+
+    .cor {
+        color: red;
+        font-size: 0.6rem;
+        font-weight: bold;
     }
 }
 

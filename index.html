@@ -73,50 +73,55 @@
                     <label for="nome">Seu nome ou apelido
                         <span class="asterisco"> *</span>
                         <span id="required-nome" class="cor"> 
-                            ❗ Seu nome deve conter no minino 3 e no máximo 10 caracteres.
+                            Deve conter no minino 3 e no máximo 10 caracteres.
                         </span>
                     </label>
                     <input type="text" autocomplete="off" placeholder="Nickname" id="nome" name="nome" oninput="validarNome()">
+                    <i class="icon-error"><img src="img/icon-error.svg" alt="error"></i>
                 </div>
         
                 <div class="label-input">
                     <label for="idade">Data de Nascimento
                         <span class="asterisco"> *</span>
                         <span id="required-idade" class="cor">
-                            ❗ Escolha uma data de nascimento válida.
+                             Escolha uma data de nascimento válida.
                         </span>
                     </label>
                     <input type="number" autocomplete="off"  id="idade" name="idade" placeholder="Ex: 1996" max="2023" oninput="validarData()" min="1900" max="2023">
+                    <i class="icon-error"><img src="img/icon-error.svg" alt="error" ></i>
                 </div>
 
                 <div class="label-input">
                     <label for="email">Seu email
                         <span class="asterisco"> *</span>
                         <span id="required-email" class="cor">
-                            ❗ Isso não é um email válido
+                            Digite um email válido.
                         </span>
                     </label>
                     <input type="email" autocomplete="off" id="email" name="email" placeholder="seuemail@gmail.com" oninput="validarEmail()" >
+                    <i class="icon-error"><img src="img/icon-error.svg" alt="error" ></i>
                 </div>
 
                 <div class="label-input">
                     <label for="senha">Sua senha
                         <span class="asterisco"> *</span>
                         <span id="required-senha" class="cor">
-                            ❗ Sua senha deve conter no mínimo 8 caracteres.
+                             Sua senha deve conter no mínimo 8 caracteres.
                         </span>
                     </label>
                     <input type="password" placeholder="Crie uma senha confiável" minlength="8" id="senha" name="senha" oninput="validarSenha()">
+                    <i class="icon-error"><img src="img/icon-error.svg" alt="error" ></i>
                 </div>
 
                 <div class="label-input">
                     <label for="repita_senha">Repita sua senha
                         <span class="asterisco"> *</span>
                         <span id="required-repita-senha" class="cor">
-                            ❗ As senhas devem ser iguais.
+                             As senhas devem ser iguais.
                         </span>
                     </label>
                     <input type="password" placeholder="Confirmar Senha" id="repita_senha" name="repita_senha" oninput="validarRepitaSenha()">
+                    <i class="icon-error"><img src="img/icon-error.svg" alt="error" ></i>
                 </div><br>
 
                 <button type="submit" id="botao">Criar conta</button>

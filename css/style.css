@@ -201,6 +201,7 @@ form input {
     width: 450px;
     height: 35px;
     color: #ffffff;
+    
 }
 
 .label-input {
@@ -208,8 +209,20 @@ form input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 457px;
     margin-bottom: 7px;
+    position: relative;
+}
+
+.icon-error {
+    position: absolute;
+    right: 10px;
+    margin-top: 38px;
+    display: none;
+}
+
+.icon-error img {
+    width: 18px;
 }
 
 .cor {
